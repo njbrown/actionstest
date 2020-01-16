@@ -23,6 +23,14 @@ namespace actionstest.Controllers
             return View();
         }
 
+        public IActionResult Api()
+        {
+            return Ok(new
+            {
+                message = "Api Success"
+            });
+        }
+
         public IActionResult Privacy()
         {
             return View();
